@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-using Files;
+﻿using Files;
 
 Console.WriteLine("Game sorteado:");
 
