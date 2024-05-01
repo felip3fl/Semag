@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Core", "2 - Core", "{B8
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Files", "Files\Files.csproj", "{19D0F8E0-57FB-4F82-8941-A58EEB44520C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeFiles", "OfficeFiles\OfficeFiles.csproj", "{9FA2BA35-CD06-4971-A49E-475DE63B7177}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OfficeFile", "OfficeFiles\OfficeFile.csproj", "{9FA2BA35-CD06-4971-A49E-475DE63B7177}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
