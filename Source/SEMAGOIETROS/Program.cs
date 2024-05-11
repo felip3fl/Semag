@@ -22,3 +22,5 @@ Console.WriteLine("Store: " + game[4]);
 Console.WriteLine("Player: " + game[1]);
 Console.WriteLine("Only Local: " + game[2]);
 Console.WriteLine("Better together: " + game[3]);
+
+Console.ReadLine();
