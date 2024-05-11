@@ -12,7 +12,7 @@ Csv csv = new Csv();
 ExcelFile excelFile = new ExcelFile();
 
 //var result = csv.OpenCsv(@"C:\Users\felip\OneDrive\Documents\My games\My game list.csv");
-var result = excelFile.Open(@"C:\Users\felip\OneDrive\Documents\My games\My game list.xlsx");
+var result = excelFile.Open(@"C:\Users\felip\Source\FL_SEMAGOIETROS\Material\My game list.xlsx");
 
 
 //print a radom number, the max number is result count
