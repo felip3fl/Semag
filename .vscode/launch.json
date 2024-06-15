@@ -9,9 +9,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/source/Semag/bin/Debug/net8.0/Semag.dll",
+            "program": "${workspaceFolder}/source/Terminal/bin/Debug/net8.0/Terminal.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/source/Semag",
+            "cwd": "${workspaceFolder}/source/Terminal",
             "console": "integratedTerminal",
             "stopAtEntry": false
         },
