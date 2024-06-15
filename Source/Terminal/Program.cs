@@ -7,7 +7,7 @@ System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Inst
 
 string choice = "S";
 string filePath = @"Files\My game list.xlsx";
-
+if (File.Exists(filePath) == true) {
 
 
     while (choice == "S" || choice == "s") {
@@ -17,8 +17,7 @@ string filePath = @"Files\My game list.xlsx";
         Csv csv = new Csv();
         ExcelFile excelFile = new ExcelFile();
 
-        var verification = File.Exists(filePath);
-        //if (verification == true) {
+        
         var result = excelFile.Open(@"Files\My game list.xlsx");
 
         
@@ -37,8 +36,8 @@ string filePath = @"Files\My game list.xlsx";
 
     }
 
-// } else {
-//     Console.WriteLine("Erro");
+} else {
+     Console.WriteLine("Erro");
 
-//     Console.ReadKey();
-// }
+     Console.ReadKey();
+    }
