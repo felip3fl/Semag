@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Test", "4 - Test", "{CF
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Terminal", "Terminal\Terminal.csproj", "{788FA5DF-6292-47CE-9F4E-4C28FCC6CE8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{1ECC6885-58BB-4D51-800C-92BA9FAE4FF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{788FA5DF-6292-47CE-9F4E-4C28FCC6CE8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{788FA5DF-6292-47CE-9F4E-4C28FCC6CE8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{788FA5DF-6292-47CE-9F4E-4C28FCC6CE8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ECC6885-58BB-4D51-800C-92BA9FAE4FF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ECC6885-58BB-4D51-800C-92BA9FAE4FF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ECC6885-58BB-4D51-800C-92BA9FAE4FF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ECC6885-58BB-4D51-800C-92BA9FAE4FF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{19D0F8E0-57FB-4F82-8941-A58EEB44520C} = {38AB95BB-B144-49BD-8C3B-FD004B75CAE7}
 		{9FA2BA35-CD06-4971-A49E-475DE63B7177} = {38AB95BB-B144-49BD-8C3B-FD004B75CAE7}
 		{788FA5DF-6292-47CE-9F4E-4C28FCC6CE8D} = {0213D504-84B6-44C4-A829-90AD7A46C742}
+		{1ECC6885-58BB-4D51-800C-92BA9FAE4FF7} = {B85792C8-C288-496A-9E59-71DB5371AC7F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {812B2F23-B4DF-47C0-9ED3-B5E34FF40F82}
