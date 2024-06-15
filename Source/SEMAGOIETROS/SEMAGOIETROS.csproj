@@ -16,4 +16,10 @@
     <ProjectReference Include="..\OfficeFiles\OfficeFile.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Files\My game list.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
