@@ -9,10 +9,10 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/source/SEMAGOIETROS/bin/Debug/net8.0/SEMAGOIETROS.dll",
+            "program": "${workspaceFolder}/source/Semag/bin/Debug/net8.0/Semag.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/source/SEMAGOIETROS",
-            "console": "externalTerminal",
+            "cwd": "${workspaceFolder}/source/Semag",
+            "console": "integratedTerminal",
             "stopAtEntry": false
         },
         {

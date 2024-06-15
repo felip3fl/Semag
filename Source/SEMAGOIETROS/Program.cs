@@ -6,7 +6,7 @@ using System.Text;
 System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
 
 string choice = "S";
-const string filePath = "C:\\Users\\Felipe\\Source\\FL_SEMAGOIETROS\\Source\\SEMAGOIETROS\\My game list.xlsx";
+const string filePath = "C:\\Users\\Felipe\\Source\\Semag\\Source\\Semag\\My game list.xlsx";
 var verification = File.Exists(filePath);
 if (verification == true) {
 
@@ -18,7 +18,7 @@ if (verification == true) {
         ExcelFile excelFile = new ExcelFile();
 
         //var result = csv.OpenCsv(@"C:\Users\felip\OneDrive\Documents\My games\My game list.csv");
-        var result = excelFile.Open(@"C:\Users\Felipe\Source\FL_SEMAGOIETROS\Material\My game list.xlsx");
+        var result = excelFile.Open(@"C:\Users\Felipe\Source\Semag\Material\My game list.xlsx");
 
 
         //print a radom number, the max number is result count
