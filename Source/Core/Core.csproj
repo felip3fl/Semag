@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\OfficeFiles\OfficeFile.csproj" />
+  </ItemGroup>
+
 </Project>
