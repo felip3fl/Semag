@@ -9,10 +9,16 @@ string choice = "S";
 string filePath = @"Files\My game list.xlsx";
 if (File.Exists(filePath) == true) {
 
+    for (int count = 5; count >= 1; count -- ) {
+
+        Console.WriteLine(count);
+        await Task.Delay(1000);
+
+    }
 
     while (choice == "S" || choice == "s") {
 
-        Console.WriteLine("Game sorteado:");
+        Console.WriteLine("\nGame sorteado:");
 
         Csv csv = new Csv();
         ExcelFile excelFile = new ExcelFile();
@@ -37,7 +43,8 @@ if (File.Exists(filePath) == true) {
     }
 
 } else {
-     Console.WriteLine("Erro");
+    Console.WriteLine("Erro");
 
-     Console.ReadKey();
-    }
+    Console.ReadKey();
+}
+
