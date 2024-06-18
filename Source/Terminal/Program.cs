@@ -1,6 +1,6 @@
 ﻿using Files;
 using OfficeFile;
-using System.Text;
+using Terminal;
 
 
 System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
@@ -9,10 +9,13 @@ string choice = "S";
 string filePath = @"Files\My game list.xlsx";
 if (File.Exists(filePath) == true) {
 
-    for (int count = 5; count >= 1; count -- ) {
+    for (int number = 5; number >= 1; number -- )  {
 
-        Console.WriteLine(count);
+        var count = new AscFont();
+        List<string> numbers = count.Numbers;
+        Console.WriteLine(numbers[number]);
         await Task.Delay(1000);
+        Console.Clear();
 
     }
 
@@ -48,3 +51,7 @@ if (File.Exists(filePath) == true) {
     Console.ReadKey();
 }
 
+public class AscFont : AscNumber {
+
+
+}
