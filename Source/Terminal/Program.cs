@@ -23,31 +23,25 @@ if (File.Exists(filePath) == true) {
     countSystem();
 
 
-    while (choice == "S" || choice == "s") {
 
-        Console.WriteLine("\nGame sorteado:");
+    Console.WriteLine("\nGame sorteado:");
 
-        Csv csv = new Csv();
-        ExcelFile excelFile = new ExcelFile();
+    Csv csv = new Csv();
+    ExcelFile excelFile = new ExcelFile();
 
-        
-        var result = excelFile.Open(@"Files\My game list.xlsx");
+    
+    var result = excelFile.Open(@"Files\My game list.xlsx");
 
-        
+    
 
-        var numeroPosicaoSorteado = new Random().Next(0, result.Count);
-        var game = gameService._gameList[numeroPosicaoSorteado];
+    var numeroPosicaoSorteado = new Random().Next(0, result.Count);
+    var game = gameService._gameList[numeroPosicaoSorteado];
 
-        Console.WriteLine("Name: " + game.Name);
-        Console.WriteLine("Store: " + game.Store);
-        Console.WriteLine("Player: " + game.Player);
-        Console.WriteLine("Only Local: " + game.OnlyLocal);
-        Console.WriteLine("Better together: " + game.BetterTogether);
-
-        Console.WriteLine("\nDeseja continuar? [S/N]: ");
-        choice = Console.ReadLine();
-
-    }
+    Console.WriteLine("Name: " + game.Name);
+    Console.WriteLine("Store: " + game.Store);
+    Console.WriteLine("Player: " + game.Player);
+    Console.WriteLine("Only Local: " + game.OnlyLocal);
+    Console.WriteLine("Better together: " + game.BetterTogether);
 
 } else {
     Console.WriteLine("Erro");
@@ -65,4 +59,3 @@ void countSystem() {
 
     }
 }
-
