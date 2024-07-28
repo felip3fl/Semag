@@ -5,7 +5,7 @@ namespace Core.Services
 {
     public class GameService
     {
-        private List<Game> _gameList = new();
+        public List<Game> _gameList = new();
 
         public void LoadFileGame()
         {

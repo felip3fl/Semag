@@ -1,4 +1,5 @@
-﻿using Files;
+﻿using Core.Services;
+using Files;
 using OfficeFile;
 using Terminal;
 
@@ -6,6 +7,8 @@ using Terminal;
 System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
 
 AscNumber ascNumber = new AscNumber();
+GameService gameService = new GameService();
+gameService.LoadFileGame();
 
 string choice = "S";
 string filePath = @"Files\My game list.xlsx";
@@ -31,19 +34,15 @@ if (File.Exists(filePath) == true) {
         var result = excelFile.Open(@"Files\My game list.xlsx");
 
         
-        // _gameList[10]
 
-        //print a radom number, the max number is result count
         var numeroPosicaoSorteado = new Random().Next(0, result.Count);
-        var game = result[numeroPosicaoSorteado];
+        var game = gameService._gameList[numeroPosicaoSorteado];
 
-        Console.WriteLine("Name: " + game[0]);
-        // Console.WriteLine("Name: " + _gameList[4].Name);
-        Console.WriteLine("Store: " + game[4]);
-        //Console.WriteLine("Store: " +  _gameList[4].Store);
-        Console.WriteLine("Player: " + game[1]);
-        Console.WriteLine("Only Local: " + game[2]);
-        Console.WriteLine("Better together: " + game[3]);
+        Console.WriteLine("Name: " + game.Name);
+        Console.WriteLine("Store: " + game.Store);
+        Console.WriteLine("Player: " + game.Player);
+        Console.WriteLine("Only Local: " + game.OnlyLocal);
+        Console.WriteLine("Better together: " + game.BetterTogether);
 
         Console.WriteLine("\nDeseja continuar? [S/N]: ");
         choice = Console.ReadLine();
@@ -67,7 +66,3 @@ void countSystem() {
     }
 }
 
-public class AscFont : AscNumber {
-
-
-}
