@@ -10,7 +10,6 @@ AscNumber ascNumber = new AscNumber();
 GameService gameService = new GameService();
 gameService.LoadFileGame();
 
-string choice = "S";
 string filePath = @"Files\My game list.xlsx";
 
 
@@ -26,15 +25,7 @@ if (File.Exists(filePath) == true) {
 
     Console.WriteLine("\nGame sorteado:");
 
-    Csv csv = new Csv();
-    ExcelFile excelFile = new ExcelFile();
-
-    
-    var result = excelFile.Open(@"Files\My game list.xlsx");
-
-    
-
-    var numeroPosicaoSorteado = new Random().Next(0, result.Count);
+    var numeroPosicaoSorteado = new Random().Next(0, gameService._gameList.Count);
     var game = gameService._gameList[numeroPosicaoSorteado];
 
     Console.WriteLine("Name: " + game.Name);
